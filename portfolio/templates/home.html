@@ -1,0 +1,163 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<!-- HERO SECTION -->
+
+<section id="home" class="hero-section">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <!-- LEFT SIDE -->
+
+            <div class="col-lg-6">
+
+                <div class="hero-content">
+
+                    <span class="orange-line"></span>
+
+                    <h4 class="hello-text">
+                        Hello,
+                    </h4>
+
+                    <h2>
+                        I'm Rohit
+                    </h2>
+
+                    <h1>
+                        AI & ML Engineer
+                    </h1>
+
+                    <p>
+                        Android Developer, Python Developer,
+                        Django Developer and AI Enthusiast.
+                        Passionate about building innovative
+                        applications and real-world solutions.
+                    </p>
+
+                    <div class="mt-4">
+
+                        <a href="{% url 'projects' %}"
+                           class="btn btn-orange me-3">
+
+                            View Projects
+
+                        </a>
+
+                        <a href="{% url 'contact' %}"
+                           class="btn btn-outline-light">
+
+                            Hire Me
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT SIDE -->
+
+            <div class="col-lg-6 text-center">
+
+                <div class="hero-image-wrapper">
+
+                    <div class="circle-bg"></div>
+
+                    <img src="{% static 'images/etihad.jpg' %}"
+                         class="hero-image"
+                         alt="Rohit">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SERVICES SECTION -->
+
+<section class="services-section">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-4">
+
+                <div class="service-box">
+
+                    <div class="service-icon">
+                        💻
+                    </div>
+
+                    <h5>
+                        Android Development
+                    </h5>
+
+                    <p>
+                        Building modern Android applications
+                        using Java and Firebase.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="service-box">
+
+                    <div class="service-icon">
+                        🤖
+                    </div>
+
+                    <h5>
+                        AI Development
+                    </h5>
+
+                    <p>
+                        Creating intelligent systems using
+                        Python and Machine Learning.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="service-box">
+
+                    <div class="service-icon">
+                        🌐
+                    </div>
+
+                    <h5>
+                        Web Development
+                    </h5>
+
+                    <p>
+                        Developing responsive websites
+                        with Django and modern UI design.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

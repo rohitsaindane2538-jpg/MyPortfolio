@@ -1,0 +1,183 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="contact py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h5 class="text-warning fw-bold">CONTACT</h5>
+
+            <h1 class="fw-bold">
+                Let's Build Something Amazing Together
+            </h1>
+
+            <p class="text-secondary">
+                Have an idea or project? Feel free to contact me.
+            </p>
+
+        </div>
+
+        <div class="row g-5">
+
+            <!-- Left Side -->
+
+            <div class="col-lg-5">
+
+                <div class="p-4 shadow rounded bg-dark text-white h-100">
+
+                    <h3 class="mb-4">
+                        Contact Information
+                    </h3>
+
+                    <p>
+                        I am available for Freelancing,
+                        Android Development,
+                        AI & Machine Learning Projects,
+                        Python Programming and Django Web Development.
+                    </p>
+
+                    <hr>
+
+                    <p>
+                        <i class="fas fa-envelope text-warning"></i>
+                        &nbsp; yourmail@gmail.com
+                    </p>
+
+                    <p>
+                        <i class="fas fa-phone text-warning"></i>
+                        &nbsp; +91 XXXXXXXXXX
+                    </p>
+
+                    <p>
+                        <i class="fas fa-location-dot text-warning"></i>
+                        &nbsp; Maharashtra, India
+                    </p>
+
+                    <hr>
+
+                    <h5 class="mb-3">
+                        Follow Me
+                    </h5>
+
+                    <a href="https://github.com/rohitsaindane2538-jpg"
+                       target="_blank"
+                       class="btn btn-outline-light me-2">
+
+                        <i class="fab fa-github"></i>
+
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/rohit-saindane-686725322"
+                       target="_blank"
+                       class="btn btn-outline-primary me-2">
+
+                        <i class="fab fa-linkedin"></i>
+
+                    </a>
+
+                    <a href="https://www.instagram.com/ii.__rohit__ii"
+                       target="_blank"
+                       class="btn btn-outline-danger">
+
+                        <i class="fab fa-instagram"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Right Side -->
+
+            <div class="col-lg-7">
+
+                <div class="shadow rounded p-4">
+
+                    {% if messages %}
+
+                        {% for message in messages %}
+
+                        <div class="alert alert-success">
+
+                            {{ message }}
+
+                        </div>
+
+                        {% endfor %}
+
+                    {% endif %}
+
+                    <form method="POST">
+
+                        {% csrf_token %}
+
+                        <div class="mb-3">
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                name="name"
+                                placeholder="Your Name"
+                                required>
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <input
+                                type="email"
+                                class="form-control"
+                                name="email"
+                                placeholder="Your Email"
+                                required>
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                name="subject"
+                                placeholder="Subject"
+                                required>
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <textarea
+                                class="form-control"
+                                rows="6"
+                                name="message"
+                                placeholder="Write your message..."
+                                required></textarea>
+
+                        </div>
+
+                        <button
+                            class="btn btn-warning text-dark fw-bold px-4">
+
+                            <i class="fas fa-paper-plane"></i>
+
+                            Send Message
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

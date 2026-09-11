@@ -1,0 +1,177 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<section id="projects" class="projects">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Portfolio</span>
+
+            <h2>Projects</h2>
+
+        </div>
+
+        <!-- PROJECT 1 -->
+
+        <div class="project-card">
+
+            <div class="project-image">
+
+                <img src="{% static 'images/project1.jpg' %}" alt="Project 1">
+
+            </div>
+
+            <div class="project-content">
+
+                <h3>Smart Student Hub</h3>
+
+                <div class="tags">
+
+                    <span>Android</span>
+
+                    <span>Java</span>
+
+                    <span>Firebase</span>
+
+                </div>
+
+                <p>
+
+                    AI-powered all-in-one college assistant with
+                    attendance tracking, notes management,
+                    reminders and project monitoring.
+
+                </p>
+
+                <div class="buttons">
+
+                    <a href="#" class="btn-orange">
+
+                        View Project
+
+                    </a>
+
+                    <a href="#" class="btn-dark">
+
+                        GitHub
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- PROJECT 2 -->
+
+        <div class="project-card">
+
+            <div class="project-image">
+
+                <img src="{% static 'images/project2.jpg' %}" alt="Project 2">
+
+            </div>
+
+            <div class="project-content">
+
+                <h3>Event Management App</h3>
+
+                <div class="tags">
+
+                    <span>Android</span>
+
+                    <span>Firebase</span>
+
+                    <span>QR Code</span>
+
+                </div>
+
+                <p>
+
+                    Complete event registration system with QR code
+                    generation, coordinator panel and admin dashboard.
+
+                </p>
+
+                <div class="buttons">
+
+                    <a href="#" class="btn-orange">
+
+                        View Project
+
+                    </a>
+
+                    <a href="#" class="btn-dark">
+
+                        GitHub
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- PROJECT 3 -->
+
+        <div class="project-card">
+
+            <div class="project-image">
+
+                <img src="{% static 'images/project3.jpg' %}" alt="Project 3">
+
+            </div>
+
+            <div class="project-content">
+
+                <h3>AI Classroom Monitor</h3>
+
+                <div class="tags">
+
+                    <span>AI</span>
+
+                    <span>Python</span>
+
+                    <span>Machine Learning</span>
+
+                </div>
+
+                <p>
+
+                    Smart classroom monitoring system that detects
+                    talking patterns using audio processing and AI.
+
+                </p>
+
+                <div class="buttons">
+
+                    <a href="#" class="btn-orange">
+
+                        View Project
+
+                    </a>
+
+                    <a href="#" class="btn-dark">
+
+                        GitHub
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
